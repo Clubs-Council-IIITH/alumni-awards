@@ -88,7 +88,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg, #9d5277, #8a33ee);
+  background: linear-gradient(45deg, #4c83ea, #8d2afe);
   border-radius: 0 0 50% 50%/0 0 100% 100%;
   transform: scaleX(1.5);
 }
@@ -102,7 +102,7 @@ body {
 }
 .about .c-content {
   text-align: left; /* Left-align text inside the content block */
-  font-size: 28px;
+  font-size: 26px;
 }
 
 .about .c-content b {
@@ -192,6 +192,13 @@ body {
   text-align: center;
 }
 
+.criteria-inner-1 h3 {
+  margin-top: calc(120px - 2vw);
+  @media only screen and (max-width: 1200px) {
+    margin-top: 0;
+  }
+  }
+
 /* Procedure Section Styles */
 .procedure {
   padding: 40px 10%;
@@ -214,7 +221,7 @@ body {
   color: white;
   font-weight: 700;
   font-size: 20px;
-  background: linear-gradient(45deg, #8a33ee, #9d5277);
+  background: linear-gradient(45deg,  #4c83ea, #8d2afe);
   padding: 20px;
   border-radius: 8px;
   margin: 0 10px;
@@ -243,6 +250,10 @@ body {
   .nav-menu {
     display: none;
   }
+  .criteria-inner-1 h3{
+    margin-top: 0;
+  }
+  
   .img-container {
     display: none;
   }
