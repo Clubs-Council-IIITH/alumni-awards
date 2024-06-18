@@ -192,13 +192,6 @@ body {
   text-align: center;
 }
 
-.criteria-inner-1 h3 {
-  margin-top: calc(120px - 2vw);
-  @media only screen and (max-width: 1200px) {
-    margin-top: 0;
-  }
-  }
-
 /* Procedure Section Styles */
 .procedure {
   padding: 40px 10%;
@@ -250,10 +243,7 @@ body {
   .nav-menu {
     display: none;
   }
-  .criteria-inner-1 h3{
-    margin-top: 0;
-  }
-  
+
   .img-container {
     display: none;
   }
