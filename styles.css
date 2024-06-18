@@ -278,6 +278,6 @@ body {
   .criteria-inner-common {
     width: 95%;
     min-width: 0;
-    margin: auto;
+    margin: 10px auto;
   }
 }
