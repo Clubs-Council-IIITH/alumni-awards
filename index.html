@@ -10,33 +10,31 @@
 <header class="header fixed-top" data-scrollto-offset="0" id="header">
   <div class="container">
     <a class="logo" href="index.html">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <img alt="logo" src="logo.png" />
+      <img alt="logo" src="images/logo.png" />
     </a>
     <h3 class="sc-title">Alumni&nbsp;Awards</h3>
+
+    <!-- Burger Menu for Mobile View -->
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
     <nav class="nav-menu">
       <ul>
-        <li>
-          <a href="https://www.iiit.ac.in" target="_blank">IIITH</a>
-        </li>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#criteria">Criteria</a>
-        </li>
-        <li>
-          <a href="#procedure">Rules / Procedure</a>
-        </li>
-        <li>
-          <a href="https://forms.gle/emvsm5UKMDpADvDE6"
-            target="_blank">Nomination Form</a>
+        <li><a href="https://www.iiit.ac.in" target="_blank">IIITH</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#criteria">Criteria</a></li>
+        <li><a href="alumni-winners.html" target="_blank">Winners</a></li>
+        <li><a href="index.html#procedure">Rules&nbsp;/&nbsp;Procedure</a></li>
+        <li><a href="https://forms.gle/emvsm5UKMDpADvDE6" target="_blank" aria-disabled="true">Nomination&nbsp;Form</a>
         </li>
       </ul>
     </nav>
   </div>
 </header>
-<!-- End Header -->
+<!-- ====== End Header ======= -->
 
 <body>
   <section class="about" id="about-head">
@@ -53,9 +51,47 @@
       </p>
     </div>
     <div class="img-container">
-      <img src="awards-logo.png" alt="award" />
+      <img src="images/awards-logo.png" alt="award" />
     </div>
   </section>
+
+  <!-- Invitation section -->
+  <section id="invitation" class="invitation-section">
+    <div class="container invitation-content">
+      <div class="invitation-image">
+        <img src="images/Alumni-Awards-Ceremony.png" alt="Alumni Awards Ceremony 2024 Invitation">
+      </div>
+      <div class="invitation-text">
+        <h3>Join Us for the Prestigious Alumni Awards Ceremony!</h3>
+        <p>
+          We are excited to invite you to an unforgettable evening where we honor the accomplishments of our
+          distinguished alumni. This event will celebrate the success stories of individuals who have made significant
+          contributions in their respective fields, representing the values and vision of our institution.
+        </p>
+        <p>
+          Get ready to witness inspiring speeches, heartfelt moments, and enjoy a night filled with networking,
+          recognition, and celebration. Whether you are a long-time supporter or a recent graduate, this event promises
+          something special for everyone.
+        </p>
+
+        <p><b>Mark your calendars and be part of this grand celebration</b></p>
+        <ul class="event-details">
+          <li><b>Date:</b> Monday, September 2, 2024</li>
+          <li><b>Time:</b> 6:30 PM</li>
+          <li><b>Venue:</b> IIIT Hyderabad, H-105</li>
+        </ul>
+
+        <p>
+          Make sure to join us and show your support for the incredible achievements of your fellow alumni. It's a night
+          you won't want to miss!
+        </p>
+
+        <a class="btn-primary youtube-link" href="https://tinyurl.com/yrvpwsjw" target="_blank">Watch the Ceremony Live
+          on YouTube</a>
+      </div>
+    </div>
+  </section>
+
   <section class="about-body" id="about">
     <div>
       <h3 class="sc-title">Alumni Awards</h3>
@@ -122,7 +158,8 @@
               <h3 style="text-align: center;"><b>OR</b></h3>
               <p><b>Service to Society / Nation -</b> Contribute time and energy to improve
                 the quality of life for others, in the community or in service to the nation. The recipient exhibits a
-                demonstrated commitment to service through their professional (police/military/navy/Airforce/administrative services in the government) or volunteer efforts.</p>
+                demonstrated commitment to service through their professional
+                (police/military/navy/Airforce/administrative services in the government) or volunteer efforts.</p>
             </li>
           </ul>
         </div>
@@ -155,13 +192,16 @@
           <li> The Nominee must be an Alumnus /Alumna of the International Institute of Information Technology,
             Hyderabad with alumni status of 5+ years.</li>
           <li>Self-nomination is not allowed.</li>
-          <li> The Proposer / Nominator must be alumni, faculty, ex faculty, staff or ex- staff of IIIT-H.</li>
+          <li>Winners of the award in a particular category in the past years cannot be nominated for the same category
+            again, but can be nominated for a different category.</li>
+          <li> The Proposer or Nominator must be faculty/ ex faculty/ staff/ ex- staff of IIIT-H, associated 5+ years
+            with the institute, or alumni of IIIT-H with 5+ years of alumni status.</li>
           <li> A nominator can propose up to 5 alumni per award category.</li>
           <li> Nominations will be held for each individual for three years unless updated and renewed by the original
             or another appropriate nominator for consideration in a subsequent year. </li>
           <li> The online nomination form shall be completed in all aspects and with necessary supporting documents.
           </li>
-          <li> The signature of the Proposer is mandatory. </li>
+          <!-- <li> The signature of the Proposer is mandatory. </li>-->
           <li> The completed nomination forms shall be submitted before the due date as mentioned in the form.
             Nominations received after the due date and time, will not be considered. </li>
           <li> The Alumni Awards Committee will assess and select the awardees. The decision of the Committee is Final
@@ -174,8 +214,8 @@
         </ul>
         <h3 style="text-align: center;">To nominate please click on the nomination form</h3>
         <div class="form-links">
-          <a href="https://forms.gle/emvsm5UKMDpADvDE6"
-            target="_blank" class="btn btn-primary">Nomination Form</a>
+          <a href="https://forms.gle/emvsm5UKMDpADvDE6" target="_blank" class="btn btn-primary"
+            aria-disabled="true">Nomination Form</a>
           <!-- <a href="https://forms.gle/emvsm5UKMDpADvDE6"
             target="_blank" class="btn btn-primary">Responder's Form</a> -->
         </div>
@@ -196,5 +236,14 @@
     International Institute of Information Technology, Hyderabad. All rights reserved</div>
 </footer>
 <!-- End Footer -->
+<script>
+  const toggleButton = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+
+  toggleButton.addEventListener('click', () => {
+    toggleButton.classList.toggle('active');
+    navMenu.classList.toggle('active');
+  });
+</script>
 
 </html>

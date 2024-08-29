@@ -7,6 +7,7 @@ body {
   background-color: #e7f3ff;
   display: flex;
   flex-direction: column;
+  scroll-behavior: smooth;
 }
 
 /* Header Styles */
@@ -24,7 +25,23 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
+
+.header .menu-toggle {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.header .menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: #205c99;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
 .header .logo {
   display: flex;
   align-items: center;
@@ -134,7 +151,6 @@ body {
 }
 
 .about-inner p {
-  text-indent: 20px;
   font-size: 20px;
   line-height: 1.6;
 }
@@ -149,6 +165,82 @@ body {
   padding: 10px;
   font-size: 20px;
 }
+
+/* Invitation Section Styles */
+.invitation-section {
+  padding: 60px 0;
+  background-color: #f3f7fc; /* Soft background color matching the theme */
+}
+
+.invitation-content {
+  display: flex;
+  align-items: stretch; /* Ensure both items stretch to the same height */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 20px 10%;
+}
+
+.invitation-image {
+  flex: 1;
+  max-width: 45%; /* Adjust the width to fit the layout */
+  text-align: center;
+}
+
+.invitation-image img {
+  max-width: 100%;
+  height: auto; /* Ensure image maintains aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.invitation-text {
+  flex: 1;
+  max-width: 50%;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center text content */
+  height: auto; /* Allow the content to stretch based on the image height */
+}
+
+.invitation-text h3 {
+  font-size: 28px;
+  color: #205c99; /* Dark blue consistent with your theme */
+  margin-bottom: 20px;
+}
+
+.invitation-text p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.invitation-text b {
+  color: #274cab; /* Accent color for emphasis */
+}
+
+.invitation-text a.btn-primary {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 12px 20px;
+  background: linear-gradient(45deg, #4c83ea, #8d2afe);
+  color: white;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  width: max-content;
+}
+
+.invitation-text a.btn-primary:hover {
+  background: linear-gradient(45deg, #ff3e9f, #851bff);
+}
+
 
 /* Criteria Section Styles */
 .criteria {
@@ -226,6 +318,57 @@ body {
   transition: 0.5s;
 }
 
+
+/* Winners Section Styles */
+.winners-section {
+  padding: 80px 10%;
+  margin-top: 60px; /* Adjusting for fixed header */
+}
+
+.winners-section p{
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.section-title {
+  font-size: 30px;
+  color: #205c99;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.year-title {
+  font-size: 24px;
+  color: #274cab;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.images-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 0;
+}
+
+.image-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+
+/* Adjust styles for portrait and landscape images */
+.image-item.portrait img, .image-item.landscape  img {
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Footer Styles */
 .footer {
   background-color: #445566;
@@ -238,17 +381,82 @@ body {
   margin-left: 10%;
 }
 
+[aria-disabled="true"] {
+  cursor: not-allowed !important;
+}
+
 /* Responsive Styles */
-@media only screen and (max-width: 1040px) {
-  .nav-menu {
+
+@media only screen and (max-width: 1680px) {
+  .event-details{
     display: none;
   }
+}
 
+@media screen and (max-width: 1520px) {
+  .invitation-content {
+    flex-direction: column;
+  }
+
+  .invitation-image, .invitation-text {
+    max-width: 100%;
+    height: auto; /* Remove fixed height for smaller screens */
+  }
+
+  .invitation-text {
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 1040px) {
   .img-container {
     display: none;
   }
   .about:before {
     transform: scaleX(2);
+  }
+  .header .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 0;
+  }
+
+  .header .nav-menu ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header .nav-menu ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .header .menu-toggle {
+    display: flex; /* Display the burger menu */
+    margin-right: 30px;
+  }
+
+  .header .menu-toggle.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 5px);
+  }
+
+  .header .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .header .menu-toggle.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+
+  .header .nav-menu.active {
+    display: flex;
   }
 }
 @media only screen and (max-width: 700px) {
