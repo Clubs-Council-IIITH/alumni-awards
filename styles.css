@@ -71,13 +71,11 @@ body {
   margin: 0;
   padding: 0;
 }
-.nav-menu ul li > * {
-  text-decoration: none;
+
+.nav-menu ul li a, .nav-menu ul li button {
   font-size: 18px;
   font-weight: 600;
   margin: 0 10px;
-}
-.nav-menu ul li a, .nav-menu ul li button {
   text-decoration: none;
   border: none;
   outline: none;
