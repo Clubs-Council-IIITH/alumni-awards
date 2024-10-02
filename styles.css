@@ -71,20 +71,47 @@ body {
   margin: 0;
   padding: 0;
 }
-.nav-menu ul li {
+.nav-menu ul li > * {
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;
   margin: 0 10px;
 }
-.nav-menu ul li a {
+.nav-menu ul li a, .nav-menu ul li button {
   text-decoration: none;
+  border: none;
+  outline: none;
+  background: none;
   color: #004b96;
   font-size: 16px;
 }
-.nav-menu ul li a:hover {
+.nav-menu ul li a:hover, .nav-menu ul li button:hover {
   color: #ff5959;
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
 
 /* About Section Styles */
 .about {
@@ -330,6 +357,80 @@ body {
   line-height: 1.6;
 }
 
+.winners-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+ /* Style for the winners section */
+ .winner {
+  box-sizing: border-box;
+  width: calc(50% - 15px);
+  background: white;
+  padding: 20px;
+  margin-bottom: 40px; /* Space between winners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  border-radius: 12px; /* Rounded corners */
+}
+
+.winner img {
+  width: 200px; /* Adjust the size of the image as needed */
+  height: auto;
+  margin-right: 20px; /* Space between the image and text */
+  float: left; /* Float the image to the left */
+  border-radius: 5px; /* Optional: Rounded corners for the image */
+}
+
+.winner p {
+  font-family: "Montserrat";
+  text-align: justify; /* Justify text for better readability */
+  line-height: 1.7;
+}
+
+.note{
+  font-size: 18px;
+  font-weight: bold;
+  color: #666666;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Clearfix to contain floated elements */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media (max-width: 768px) {
+  .winners-container{
+    display: block;
+  }
+  .winner {
+    padding: 20px;
+  }
+  .winner img {
+      width: calc(100% - 60px);
+      float: none; /* Remove float on smaller screens */
+      display: block; /* Stack the image above text */
+      margin: 0 auto 20px; /* Center image with margin below */
+  }
+}
+
+
+
+.gallery {
+    padding: 50px;
+    columns: 300px;
+  }
+
+.gallery-image {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 0.7rem;
+  }
+
 .section-title {
   font-size: 30px;
   color: #205c99;
@@ -407,7 +508,7 @@ body {
     margin-top: 20px;
   }
 }
-@media only screen and (max-width: 1040px) {
+@media only screen and (max-width: 1240px) {
   .img-container {
     display: none;
   }
@@ -433,9 +534,13 @@ body {
     width: 100%;
   }
 
-  .header .nav-menu ul li {
-    margin: 10px 0;
+  .header .nav-menu ul li{
+    padding: 12px 16px;
     text-align: center;
+  }
+
+  .header .nav-menu ul li button{
+    padding-bottom: 10px;
   }
 
   .header .menu-toggle {
@@ -457,6 +562,39 @@ body {
 
   .header .nav-menu.active {
     display: flex;
+  }
+
+  .header .nav-menu ul li:hover{
+    box-sizing: border-box;
+    background: #ddd;
+  }
+
+  .dropdown-content{
+    position: relative;
+    display: none;
+    background-color: none;
+    box-shadow: none;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .winners-container{
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .winner {
+    width: 100%;
+    padding: 20px;
+  }
+  .winner img {
+      float: none; /* Remove float on smaller screens */
+      display: block; /* Stack the image above text */
+      margin: 0 auto 20px; /* Center image with margin below */
   }
 }
 @media only screen and (max-width: 700px) {
