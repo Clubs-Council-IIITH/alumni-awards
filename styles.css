@@ -194,6 +194,7 @@ body {
 /* Invitation Section Styles */
 .invitation-section {
   padding: 60px 0;
+  min-height: 80vh;
   background-color: #f3f7fc; /* Soft background color matching the theme */
 }
 
@@ -208,6 +209,8 @@ body {
 
 .invitation-image {
   flex: 1;
+  align-items: center;
+  margin: auto;
   max-width: 45%; /* Adjust the width to fit the layout */
   text-align: center;
 }
@@ -232,7 +235,8 @@ body {
   height: auto; /* Allow the content to stretch based on the image height */
 }
 
-.invitation-text h3 {
+.invitation-section h3 {
+  text-align: center;
   font-size: 28px;
   color: #205c99; /* Dark blue consistent with your theme */
   margin-bottom: 20px;
@@ -470,6 +474,8 @@ body {
 
 /* Footer Styles */
 .footer {
+  width: 100%;
+  margin: 0 auto;
   background-color: #445566;
   color: #fff; /* White text color */
   padding: 35px 0;
@@ -501,11 +507,7 @@ body {
     display: block;
   }
 
-  .invitation-image{
-    display: none;
-  }
-
-  .invitation-text {
+  .invitation-image, .invitation-text {
     max-width: 100%;
     height: auto; /* Remove fixed height for smaller screens */
   }
