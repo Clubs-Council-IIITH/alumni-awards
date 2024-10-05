@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Gallery</title>
     <style>
-        
+
     </style>
 </head>
 </head>
@@ -53,28 +53,45 @@
         </div>
     </header>
 
-    <h1>Image Gallery</h1>
-    <div class="gallery" id="gallery"></div>
-    <script>
-        const images = [
-            '1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg', '6.jpeg',
-            '7.jpeg', '8.jpeg', '9.jpeg', '10.jpeg', '11.jpeg', '12.jpeg',
-            '13.jpeg', '14.jpeg', '15.jpeg', '16.jpeg', '17.jpeg', '18.jpeg',
-            '19.jpeg', '20.jpeg', '21.jpeg', '22.jpeg', '23.jpeg', '24.jpeg',
-            '25.jpeg', '26.jpeg', '27.jpeg', '28.jpeg', '29.jpeg', '30.jpeg'
-        ];
+    <br><br><!-- Post-Event section -->
+    <section id="invitation" class="invitation-section">
+        <div class="container invitation-content">
+            <div class="invitation-image">
+                <img src="images/Alumni-Awards-Ceremony.png" alt="Alumni Awards Ceremony 2024 Highlights">
+            </div>
+            <div class="invitation-text">
+                <h3>Thank You for Joining the Alumni Awards Ceremony 2024 and 2023!</h3>
+                <p>
+                    We are grateful to everyone who joined us for an unforgettable evening celebrating the remarkable
+                    achievements of our
+                    distinguished alumni. The ceremony was a huge success, filled with inspiring speeches, touching
+                    moments, and
+                    well-deserved recognition.
+                </p>
+                <p class="secondary-text">
+                    The event brought together alumni, faculty, and friends of the institution to honor those who
+                    continue to make an impact in their fields and uphold the values of our community.
+                </p>
 
-        const gallery = document.getElementById('gallery');
+                <p><b>Couldn't attend? Watch the full ceremony online!</b></p>
+                <ul class="event-details">
+                    <b>Date:</b> Monday, September 2, 2024<br><br>
+                    <b>Photo Highlights:</b> <a href="gallery.html" style="text-decoration: none;color:rgb(86, 2, 255);">View Photos</a><br><br>
+                    <a class="btn-primary youtube-link" href="https://youtu.be/aGG4A4KD9iY?t=1580" target="_blank">Watch Recording on YouTube (from 26:20 mins)</a>
+                </ul>
 
-        images.forEach(image => {
-            const imgElement = document.createElement('img');
-            imgElement.src = `gallery/${image}`;
-            imgElement.alt = image;
-            imgElement.classList.add('gallery-image');
-            imgElement.loading = "lazy";
-            gallery.appendChild(imgElement);
-        });
-    </script>
+                <p>
+                    Thank you once again for being part of this special evening. We look forward to seeing you at future
+                    events and
+                    continuing to celebrate the accomplishments of our incredible alumni community.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+
+
     <!-- Footer Section -->
     <footer class="footer" id="footer">
         <div class="copyright">
