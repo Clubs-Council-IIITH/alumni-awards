@@ -10,6 +10,10 @@ body {
   scroll-behavior: smooth;
 }
 
+p, li{
+  text-align: justify;
+}
+
 /* Header Styles */
 .header {
   background-color: #fff; /* White background */
@@ -143,7 +147,6 @@ body {
   border-radius: 8px; /* Rounded corners */
 }
 .about .c-content {
-  text-align: left; /* Left-align text inside the content block */
   font-size: 26px;
 }
 
