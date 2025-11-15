@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="includes/load-includes.js"></script>
     <title>Gallery</title>
     <style>
 
@@ -13,48 +14,57 @@
 </head>
 
 <body>
-    <!-- Header Section -->
-    <header class="header fixed-top" data-scrollto-offset="0" id="header">
-        <div class="container">
-            <a class="logo" href="index.html">
-                <img alt="logo" src="images/logo.png" />
-            </a>
-            <h3 class="sc-title">Alumni&nbsp;Awards</h3>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="https://www.iiit.ac.in" target="_blank">IIITH</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#criteria">Criteria</a></li>
-                    <li><a href="index.html#procedure">Rules&nbsp;/&nbsp;Procedure</a></li>
-                    <li><a href="https://forms.gle/emvsm5UKMDpADvDE6" target="_blank"
-                            aria-disabled="true">Nomination&nbsp;Form</a>
-                    <li class="dropdown">
-                        <button class="dropbtn">Winners&nbsp;&#x25BC;</button>
-                        <div class="dropdown-content">
-                            <a href="alumni-winners-2024.html">Winners&nbsp;2024</a>
-                            <a href="alumni-winners-2023.html">Winners&nbsp;2023</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <button class="dropbtn">Gallery&nbsp;&#x25BC;</button>
-                        <div class="dropdown-content">
-                            <a href="gallery.html">Pictures</a>
-                            <a href="award-ceremony.html">Award&nbsp;Ceremony</a>
-                        </div>
-                    </li>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
 
-    <br><br><!-- Post-Event section -->
+    <br><br>
     <section id="invitation" class="invitation-section">
+        <h3>Thank You for Joining the Alumni Awards Ceremony 2025!</h3>
+        <div class="container invitation-content">
+            <div class="invitation-image">
+                <img src="images/Foundation Day.jpg" alt="Foundation Day">
+                <br /><br />
+                <img src="images/thumbnail_Alumni_Awards_2025.jpg" alt="Alumni Awards Ceremony 2025 Invitation">
+            </div>
+            <div class="invitation-text" style="justify-content: flex-start;">
+                <p>
+                    We are grateful to everyone who joined us for an unforgettable evening celebrating the
+                    achievements of our distinguished alumni. The 2025 ceremony featured inspiring speeches,
+                    the launch of major initiatives, and recognition of outstanding contributions to the community.
+                </p>
+
+                <p><b>Highlights from the Event:</b></p>
+                <ul class="event-details" style="display: flex;flex-direction: column; gap: 10px;">
+                    <li><b>Date:</b> Tuesday, September 2, 2025</li>
+                    <li><b>Venue:</b> KRB Auditorium (4th Floor), IIIT-Hyderabad</li>
+                    <li><b>Awards Presented To:</b> Naveena Yanamala & Manish Jain</li>
+                    <li><b>Special Address:</b> Prof. Sandeep Shukla, Director</li>
+                    <li><b>Chief Guests:</b> Dr. Jitender (DGP, Telangana) & Ms. Shikha Goel (IPS)</li>
+                </ul>
+
+                <p><b>Program Overview:</b></p>
+                <ul style="display: flex;flex-direction: column; gap: 10px;">
+                    <li>Welcome Address</li>
+                    <li>Foundation Day Celebrations</li>
+                    <li>Launch of Vyuha Lab</li>
+                    <li>Chief Guests Keynotes</li>
+                    <li>Alumni Awards Ceremony</li>
+                    <li>Address by Prof. Raj Reddy</li>
+                    <li>Address by Director, Prof. Sandeep Shukla</li>
+                    <li>High Tea</li>
+                </ul>
+
+                <p><b>Couldn't attend? Watch the full ceremony online!</b></p>
+
+                <a class="btn-primary youtube-link" href="https://rb.gy/eev8hg" target="_blank">
+                    Watch the Ceremony Recording on YouTube
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Post-Event section -->
+    <!-- <section id="invitation" class="invitation-section">
         <h3>Thank You for Joining the Alumni Awards Ceremony 2024 and 2023!</h3>
         <div class="container invitation-content">
             <div class="invitation-image">
@@ -83,30 +93,11 @@
 
             </div>
         </div>
-    </section>
+    </section> -->
 
+    <!-- Footer will be loaded here -->
+    <div id="footer-placeholder"></div>
 
-
-    <!-- Footer Section -->
-    <footer class="footer" id="footer">
-        <div class="copyright">
-            © Copyright <strong><span>2024</span></strong>.
-        </div>
-        <div class="credits">
-            International Institute of Information Technology, Hyderabad. All rights reserved.
-        </div>
-    </footer>
-
-    <!-- JavaScript for Mobile Menu Toggle -->
-    <script>
-        const toggleButton = document.querySelector('.menu-toggle');
-        const navMenu = document.querySelector('.nav-menu');
-
-        toggleButton.addEventListener('click', () => {
-            toggleButton.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-    </script>
 </body>
 
 </html>

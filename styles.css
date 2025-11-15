@@ -1,6 +1,4 @@
-/* Global Styles */
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
@@ -10,21 +8,22 @@ body {
   scroll-behavior: smooth;
 }
 
-p, li{
+p, li {
   text-align: justify;
 }
 
-/* Header Styles */
+/* ---------------------------------- HEADER ---------------------------------- */
 .header {
-  background-color: #fff; /* White background */
-  width: 100%; /* Full width */
-  padding: 10px 0; /* Top and bottom padding */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  position: fixed; /* Fixed position at the top */
+  background-color: #fff;
+  width: 100%;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000; /* High z-index to ensure it stays above other content */
+  z-index: 1000;
 }
+
 .header .container {
   display: flex;
   align-items: center;
@@ -33,7 +32,7 @@ p, li{
 }
 
 .header .menu-toggle {
-  display: none; /* Hidden by default */
+  display: none;
   flex-direction: column;
   cursor: pointer;
 }
@@ -49,26 +48,30 @@ p, li{
 .header .logo {
   display: flex;
   align-items: center;
-  text-decoration: none; /* Remove underline from links */
+  text-decoration: none;
   margin-left: 8%;
 }
+
 .header .logo img {
-  max-height: 60px; /* Limit logo height */
-  margin-right: 10px; /* Spacing between logo and text */
+  max-height: 60px;
+  margin-right: 10px;
   vertical-align: middle;
 }
+
 .header .sc-title {
-  font-size: 24px; /* Font size for the title */
-  color: #205c99; /* Dark blue text color */
-  margin: 20px; /* Remove default margin */
-  text-transform: uppercase; /* Transform text to uppercase */
+  font-size: 24px;
+  color: #205c99;
+  margin: 20px;
+  text-transform: uppercase;
 }
+
 .nav-menu {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 8%;
 }
+
 .nav-menu ul {
   display: flex;
   list-style: none;
@@ -76,8 +79,9 @@ p, li{
   padding: 0;
 }
 
-.nav-menu ul li a, .nav-menu ul li button {
-  font-size: 18px;
+.nav-menu ul li a,
+.nav-menu ul li button {
+  font-size: 16px;
   font-weight: 600;
   margin: 0 10px;
   text-decoration: none;
@@ -85,12 +89,14 @@ p, li{
   outline: none;
   background: none;
   color: #004b96;
-  font-size: 16px;
 }
-.nav-menu ul li a:hover, .nav-menu ul li button:hover {
+
+.nav-menu ul li a:hover,
+.nav-menu ul li button:hover {
   color: #ff5959;
 }
 
+/* Dropdown */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -101,21 +107,26 @@ p, li{
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
+  display: block;
   text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
-.dropdown:hover .dropdown-content {display: block;}
-
-/* About Section Styles */
+/* ---------------------------------- ABOUT SECTION ---------------------------------- */
 .about {
   position: relative;
   width: 100%;
@@ -127,6 +138,7 @@ p, li{
   padding: 80px 0;
   color: white;
 }
+
 .about:before {
   content: "";
   position: absolute;
@@ -135,17 +147,19 @@ p, li{
   width: 100%;
   height: 100%;
   background: linear-gradient(45deg, #4c83ea, #8d2afe);
-  border-radius: 0 0 50% 50%/0 0 100% 100%;
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
   transform: scaleX(1.5);
 }
+
 .about .container {
   position: relative;
   z-index: 1;
   margin: 0 auto;
   text-align: center;
   padding: 20px 20px 20px 10%;
-  border-radius: 8px; /* Rounded corners */
+  border-radius: 8px;
 }
+
 .about .c-content {
   font-size: 26px;
 }
@@ -153,17 +167,21 @@ p, li{
 .about .c-content b {
   color: #fff173;
 }
+
 .about .c-content-sub {
-  text-align: left; /* Left-align text inside the content block */
+  text-align: left;
   font-size: 20px;
 }
+
 .about .c-content-sub b {
   color: rgb(241, 253, 69);
 }
+
 .about .img-container {
   z-index: 1;
   margin-right: 8%;
 }
+
 .about .img-container img {
   width: 20vw;
   height: 20vw;
@@ -194,35 +212,34 @@ p, li{
   font-size: 20px;
 }
 
-/* Invitation Section Styles */
+/* ---------------------------------- INVITATION ---------------------------------- */
 .invitation-section {
   padding: 60px 0;
   min-height: 80vh;
-  background-color: #f3f7fc; /* Soft background color matching the theme */
+  background-color: #f3f7fc;
 }
 
 .invitation-content {
   display: flex;
-  align-items: stretch; /* Ensure both items stretch to the same height */
+  align-items: stretch;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0 auto;
   padding: 20px 10%;
+  margin: 0 auto;
 }
 
 .invitation-image {
   flex: 1;
-  align-items: center;
   margin: auto;
-  max-width: 45%; /* Adjust the width to fit the layout */
+  max-width: 45%;
   text-align: center;
 }
 
 .invitation-image img {
   max-width: 100%;
-  height: auto; /* Ensure image maintains aspect ratio */
+  height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .invitation-text {
@@ -231,17 +248,15 @@ p, li{
   font-size: 20px;
   padding: 20px;
   border-radius: 8px;
-  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Vertically center text content */
-  height: auto; /* Allow the content to stretch based on the image height */
+  justify-content: center;
 }
 
 .invitation-section h3 {
   text-align: center;
   font-size: 28px;
-  color: #205c99; /* Dark blue consistent with your theme */
+  color: #205c99;
   margin-bottom: 20px;
 }
 
@@ -253,7 +268,7 @@ p, li{
 }
 
 .invitation-text b {
-  color: #274cab; /* Accent color for emphasis */
+  color: #274cab;
 }
 
 .invitation-text a.btn-primary {
@@ -265,7 +280,7 @@ p, li{
   background: linear-gradient(45deg, #4c83ea, #8d2afe);
   color: white;
   border-radius: 8px;
-  transition: background 0.3s ease;
+  transition: 0.3s;
   width: min(100%, max-content);
 }
 
@@ -273,16 +288,15 @@ p, li{
   background: linear-gradient(45deg, #ff3e9f, #851bff);
 }
 
-
-.n-bold{
-  font-size: 18px!important;
+.n-bold {
+  font-size: 18px !important;
 }
 
-
-/* Criteria Section Styles */
+/* ---------------------------------- CRITERIA ---------------------------------- */
 .criteria {
   padding: 40px 0;
 }
+
 .criteria .sc-title,
 .about-body .sc-title,
 .procedure .sc-title {
@@ -299,35 +313,34 @@ p, li{
 }
 
 .criteria-inner-common {
+  flex: 1;
   display: flex;
   flex-direction: column;
   background-color: white;
   line-height: 1.6;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+  padding: 15px 40px;
   margin: 10px;
   width: 49%;
-  font-size: 17px;
   min-width: 500px;
-  padding: 15px 40px;
+  font-size: 17px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  flex: 1; /* Ensures that both elements take up equal space */
 }
 
 .criteria-inner-common h2 {
+  text-align: center;
   color: #274cab;
   font-size: 25px;
-  text-align: center;
 }
 
-.criteria-inner-common li{
+.criteria-inner-common li {
   list-style: "⇾";
   padding: 10px;
   margin-left: -20px;
 }
 
-/* Procedure Section Styles */
+/* ---------------------------------- PROCEDURE ---------------------------------- */
 .procedure {
   padding: 40px 10%;
 }
@@ -349,7 +362,7 @@ p, li{
   color: white;
   font-weight: 700;
   font-size: 20px;
-  background: linear-gradient(45deg,  #4c83ea, #8d2afe);
+  background: linear-gradient(45deg, #4c83ea, #8d2afe);
   padding: 20px;
   border-radius: 8px;
   margin: 0 10px;
@@ -361,91 +374,74 @@ p, li{
   transition: 0.5s;
 }
 
-
-/* Winners Section Styles */
+/* ---------------------------------- WINNERS ---------------------------------- */
 .winners-section {
   padding: 80px 10%;
-  margin-top: 60px; /* Adjusting for fixed header */
+  margin-top: 60px;
 }
 
-.winners-section p{
+.winners-section p {
   font-size: 20px;
   line-height: 1.6;
 }
 
-.winners-container{
+.winners-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
- /* Style for the winners section */
- .winner {
-  box-sizing: border-box;
+.winner {
   width: calc(50% - 15px);
   background: white;
   padding: 20px;
-  margin-bottom: 40px; /* Space between winners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-  border-radius: 12px; /* Rounded corners */
+  margin-bottom: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-sizing: border-box;
 }
 
 .winner img {
-  width: 200px; /* Adjust the size of the image as needed */
+  width: 200px;
   height: auto;
-  margin-right: 20px; /* Space between the image and text */
-  float: left; /* Float the image to the left */
-  border-radius: 5px; /* Optional: Rounded corners for the image */
+  margin-right: 20px;
+  float: left;
+  border-radius: 5px;
 }
 
 .winner p {
   font-family: "Montserrat";
-  text-align: justify; /* Justify text for better readability */
+  text-align: justify;
   line-height: 1.7;
 }
 
-.note{
+.note {
   font-size: 18px;
   font-weight: bold;
-  color: #666666;
+  color: #666;
   text-align: center;
   margin-top: 20px;
 }
 
-/* Clearfix to contain floated elements */
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
 
-@media (max-width: 768px) {
-  .winners-container{
-    display: block;
-  }
-  .winner {
-    padding: 20px;
-  }
-  .winner img {
-      width: calc(100% - 60px);
-      float: none; /* Remove float on smaller screens */
-      display: block; /* Stack the image above text */
-      margin: 0 auto 20px; /* Center image with margin below */
-  }
+/* ---------------------------------- GALLERY ---------------------------------- */
+.gallery {
+  padding: 50px;
+  columns: 300px;
+  column-gap: 1rem;
 }
 
-
-
-.gallery {
-    padding: 50px;
-    columns: 300px;
-  }
-
 .gallery-image {
-    width: 100%;
-    margin-bottom: 1rem;
-    border-radius: 0.7rem;
-  }
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 0.7rem;
+  display: block;
+}
 
 .section-title {
   font-size: 30px;
@@ -463,9 +459,9 @@ p, li{
 
 .images-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   margin: 30px 0;
 }
 
@@ -476,24 +472,25 @@ p, li{
   margin: 15px 0;
 }
 
-/* Adjust styles for portrait and landscape images */
-.image-item.portrait img, .image-item.landscape  img {
-  height: auto;
+.image-item.portrait img,
+.image-item.landscape img {
   max-width: 100%;
   max-height: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer Styles */
+/* ---------------------------------- FOOTER ---------------------------------- */
 .footer {
   width: 100%;
   margin: 0 auto;
   background-color: #445566;
-  color: #fff; /* White text color */
+  color: #fff;
   padding: 35px 0;
 }
+
 .footer .copyright,
 .footer .credits {
   font-size: 15px;
@@ -504,10 +501,9 @@ p, li{
   cursor: not-allowed !important;
 }
 
-/* Responsive Styles */
-
+/* ---------------------------------- RESPONSIVE ---------------------------------- */
 @media only screen and (max-width: 1680px) {
-  .secondary-text{
+  .secondary-text {
     display: none;
   }
 }
@@ -517,26 +513,30 @@ p, li{
     flex-direction: column;
   }
 
-  .secondary-text{
+  .secondary-text {
     display: block;
   }
 
-  .invitation-image, .invitation-text {
+  .invitation-image,
+  .invitation-text {
     max-width: 100%;
-    height: auto; /* Remove fixed height for smaller screens */
+    height: auto;
   }
 
   .invitation-text {
     margin-top: 20px;
   }
 }
+
 @media only screen and (max-width: 1240px) {
   .img-container {
     display: none;
   }
+
   .about:before {
     transform: scaleX(2);
   }
+
   .header .nav-menu {
     display: none;
     position: absolute;
@@ -547,8 +547,7 @@ p, li{
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin-right: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   .header .nav-menu ul {
@@ -556,17 +555,17 @@ p, li{
     width: 100%;
   }
 
-  .header .nav-menu ul li{
+  .header .nav-menu ul li {
     padding: 12px 16px;
     text-align: center;
   }
 
-  .header .nav-menu ul li button{
+  .header .nav-menu ul li button {
     padding-bottom: 10px;
   }
 
   .header .menu-toggle {
-    display: flex; /* Display the burger menu */
+    display: flex;
     margin-right: 30px;
   }
 
@@ -586,59 +585,68 @@ p, li{
     display: flex;
   }
 
-  .header .nav-menu ul li:hover{
-    box-sizing: border-box;
+  .header .nav-menu ul li:hover {
     background: #ddd;
   }
 
-  .dropdown-content{
+  .dropdown-content {
     position: relative;
     display: none;
     background-color: none;
     box-shadow: none;
   }
+
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
-    text-decoration: none;
     display: block;
+    text-decoration: none;
   }
 
-  .winners-container{
+  .winners-container {
     display: block;
     justify-content: center;
     align-items: center;
   }
+
   .winner {
     width: 100%;
     padding: 20px;
   }
+
   .winner img {
-      float: none; /* Remove float on smaller screens */
-      display: block; /* Stack the image above text */
-      margin: 0 auto 20px; /* Center image with margin below */
+    float: none;
+    display: block;
+    margin: 0 auto 20px;
   }
 }
+
 @media only screen and (max-width: 700px) {
   .header .logo img {
     width: 65%;
   }
+
   .header .sc-title {
     font-size: 20px;
   }
+
   .about .container {
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
   }
+
   .about:before {
     transform: scaleX(3);
   }
+
   .about .c-content {
     margin-top: 50px;
     font-size: 24px;
   }
+
   .about .c-content-sub {
     font-size: 18px;
   }
+
   .criteria-inner {
     flex-direction: column;
     margin: 0;

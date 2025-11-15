@@ -4,34 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="includes/load-includes.js"></script>
     <title>Alumni Award Winners</title>
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="header fixed-top" data-scrollto-offset="0" id="header">
-        <div class="container">
-            <a class="logo" href="index.html">
-                <img alt="logo" src="images/logo.png" />
-            </a>
-            <h3 class="sc-title">Alumni&nbsp;Awards</h3>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="https://www.iiit.ac.in" target="_blank">IIITH</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#criteria">Criteria</a></li>
-                    <li><a href="#" target="_blank">Winners</a></li>
-                    <li><a href="index.html#procedure">Rules&nbsp;/&nbsp;Procedure</a></li>
-                    <li><a href="https://forms.gle/emvsm5UKMDpADvDE6" target="_blank" aria-disabled="true">Nomination&nbsp;Form</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
 
     <!-- Alumni Award Winners Section -->
     <section class="winners-section" id="winners">
@@ -63,25 +41,8 @@
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="footer" id="footer">
-        <div class="copyright">
-            © Copyright <strong><span>2024</span></strong>.
-        </div>
-        <div class="credits">
-            International Institute of Information Technology, Hyderabad. All rights reserved.
-        </div>
-    </footer>
+    <!-- Footer will be loaded here -->
+    <div id="footer-placeholder"></div>
 
-    <!-- JavaScript for Mobile Menu Toggle -->
-    <script>
-        const toggleButton = document.querySelector('.menu-toggle');
-        const navMenu = document.querySelector('.nav-menu');
-
-        toggleButton.addEventListener('click', () => {
-            toggleButton.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-    </script>
 </body>
 </html>

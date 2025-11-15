@@ -5,61 +5,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="includes/load-includes.js"></script>
     <title>Alumni Award Winners</title>
 </head>
 
 <body>
-    <!-- Header Section -->
-    <header class="header fixed-top" data-scrollto-offset="0" id="header">
-        <div class="container">
-            <a class="logo" href="index.html">
-                <img alt="logo" src="images/logo.png" />
-            </a>
-            <h3 class="sc-title">Alumni&nbsp;Awards</h3>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="https://www.iiit.ac.in" target="_blank">IIITH</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#criteria">Criteria</a></li>
-                    <li><a href="index.html#procedure">Rules&nbsp;/&nbsp;Procedure</a></li>
-                    <li><a href="https://forms.gle/emvsm5UKMDpADvDE6" target="_blank"
-                            aria-disabled="true">Nomination&nbsp;Form</a>
-                    <li class="dropdown">
-                        <button class="dropbtn">Winners&nbsp;&#x25BC;</button>
-                        <div class="dropdown-content">
-                            <a href="alumni-winners-2024.html">Winners 2024</a>
-                            <a href="alumni-winners-2023.html">Winners 2023</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <button class="dropbtn">Gallery&nbsp;&#x25BC;</button>
-                        <div class="dropdown-content">
-                            <a href="gallery.html">Pictures</a>
-                            <a href="award-ceremony.html">Award&nbsp;Ceremony</a>
-                        </div>
-                    </li>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
+    // get header file
+    <div id="header-placeholder"></div>
 
     <!-- Alumni Award Winners Section -->
     <section class="winners-section" id="winners">
         <div class="container">
             <h2 class="section-title">Winners of Outstanding Service Award - 2023</h2>
-            <p>
-                We are proud to showcase the alumni who have been recognized for their exceptional achievements and
-                contributions. Below are the winners of the prestigious Alumni Awards.
-            </p>
-
-            <!-- Winners of Outstanding Service Award 2023 -->
+            <p style="text-align: center;">We are proud to showcase the alumni who have been recognized for their exceptional achievements and
+                contributions. Below are the winners of the prestigious Alumni Awards.</p>
             <div class="images-container">
                 <div class="image-item landscape">
                     <img src="images/Outstanding_Service_2023.png" alt="Alumni Outstanding Service 2024" />
@@ -77,7 +36,7 @@
                     <p>The joy of giving and the desire to fund financially needy candidates fueled Vivek Mandava and
                         his friends to establish the IIIT-H Alumni Foundation in USA, a global platform to connect and
                         engage alumni to give back to their alma mater. The Foundation is legally registered in the US
-                        to get 501(c) 3 charity benefits and matching donations. Vivek’s engagement with the Alumni Fund
+                        to get 501(c) 3 charity benefits and matching donations. Vivek's engagement with the Alumni Fund
                         Council in India and his experience working with other US non-profits, were invaluable in the
                         thoughtful and futuristic structuring of the IIIT-H Alumni Foundation USA which partners with
                         matching programs like Benevity and Double the Donation to amplify donations. He is currently
@@ -99,10 +58,10 @@
                         leader and entrepreneur, working out of the San Francisco South Bay Area, is a co-founder of
                         Questbook along with 3 alumni from three different generations of IIIT Hyderabad.
                     </p>
-                    <p>Subhash’s deep commitment to the creation and operation of the Alumni Fund, is personal, and a
+                    <p>Subhash's deep commitment to the creation and operation of the Alumni Fund, is personal, and a
                         way of paying back the kindness shown to him by a relative during his time of need. He continues
                         to champion the Alumni Fund-raising drives, that have consistently increased alumni
-                        contributions year on year. The ‘Admissions Evangelist’, was responsible for setting up of the
+                        contributions year on year. The Admissions Evangelist', was responsible for setting up of the
                         Student Parliament and the Library system at the institute. Subhash easily straddles across the
                         different batches of alumni, weaving a strong alumni network and is a key organizer of all
                         alumni meets, especially those in the Bay Area. His passion to innovate, nurture, and mentor has
@@ -117,60 +76,123 @@
                     <p><strong>Santhosh Kodipaka</strong> <br>
                         Alumnus of the batch of 1999, Santhosh Kodipaka graduated with a B.Tech (Hons) in CSE from IIIT
                         Hyderabad and went on to complete his Ph.D from the University of Florida. He is currently
-                        Principal Machine Learning Manager for Microsoft’s Ads - Creative AI division in the Bay Area.
+                        Principal Machine Learning Manager for Microsoft's Ads - Creative AI division in the Bay Area.
                     </p>
-                    <p>Santosh was fully involved in co-funding the IIIT-H Alumni Foundation USA along with Vivek Mandava and took charge of the bookkeeping for the Foundation. His organizing capability that started with organizing the first Felicity at IIIT Hyderabad blossomed into social volunteering and helped create a strong alumni base at Seattle and in the Bay Area. Santosh was a key organizer of the Seattle Alumni Meets for the 20th and the 25th anniversary.</p>
-                    <p class="note">The institute is proud to confer on alumnus Santosh Kodipaka the Outstanding Service Award-2023.</p>
+                    <p>Santosh was fully involved in co-funding the IIIT-H Alumni Foundation USA along with Vivek
+                        Mandava and took charge of the bookkeeping for the Foundation. His organizing capability that
+                        started with organizing the first Felicity at IIIT Hyderabad blossomed into social volunteering
+                        and helped create a strong alumni base at Seattle and in the Bay Area. Santosh was a key
+                        organizer of the Seattle Alumni Meets for the 20th and the 25th anniversary.</p>
+                    <p class="note">The institute is proud to confer on alumnus Santosh Kodipaka the Outstanding Service
+                        Award-2023.</p>
                 </div>
 
                 <!-- Winner 4: Jayachandra Sunkara -->
                 <div class="winner clearfix">
                     <img src="images/jayachandra_sunkara.jpg" alt="Jayachandra Sunkara" />
                     <p><strong>Jayachandra Sunkara</strong> <br>
-                        Alumnus of the batch of 2000, Jayachandra Sunkara graduated with a B.Tech in CSE from IIIT Hyderabad and completed his MBA from the IIM Bangalore. He is currently an Engineering Lead at Amazon, Hyderabad, and the founder of Umashankar Agri Pvt Ltd.
+                        Alumnus of the batch of 2000, Jayachandra Sunkara graduated with a B.Tech in CSE from IIIT
+                        Hyderabad and completed his MBA from the IIM Bangalore. He is currently an Engineering Lead at
+                        Amazon, Hyderabad, and the founder of Umashankar Agri Pvt Ltd.
                     </p>
-                    <p>Jayachandra Sunkara was deeply involved with the creation of the Alumni Fund, an initiative that is especially dear to him. During his stint at Microsoft, he ensured that IIITH was registered for the Matching Program on Microsoft’s donations site, which motivated other alumni to do the same in their workplace. He was the brand ambassador for the SPEC program, (which is a special channel of admission for rural and needy students) during its launch and his convincing presentation to the students was a key factor for its success. The sustainable repayment models he presented form the basis of the pay forward model the institute follows today. An active participant in all the alumni meets, Jayachandra is a strong binding force among the alumni.</p>
-                    <p class="note">The institute is proud to confer on alumnus Jayachandra Sunkara the Outstanding Service Award-2023</p>
+                    <p>Jayachandra Sunkara was deeply involved with the creation of the Alumni Fund, an initiative that
+                        is especially dear to him. During his stint at Microsoft, he ensured that IIITH was registered
+                        for the Matching Program on Microsoft's donations site, which motivated other alumni to do the
+                        same in their workplace. He was the brand ambassador for the SPEC program, (which is a special
+                        channel of admission for rural and needy students) during its launch and his convincing
+                        presentation to the students was a key factor for its success. The sustainable repayment models
+                        he presented form the basis of the pay forward model the institute follows today. An active
+                        participant in all the alumni meets, Jayachandra is a strong binding force among the alumni.</p>
+                    <p class="note">The institute is proud to confer on alumnus Jayachandra Sunkara the Outstanding
+                        Service Award-2023</p>
                 </div>
 
                 <!-- Winner 5: Vardhman Jain -->
                 <div class="winner clearfix">
                     <img src="images/vardhman_jain.jpg" alt="Vardhman Jain" />
                     <p><strong>Vardhman Jain</strong> <br>
-                        Alumnus of the 2001 dual degree batch, Vardhman Jain graduated with a B.Tech (Hons) and a MS in CSE from IIITH. He is now a Senior Engineering Manager at Google, in the Bay Area.
+                        Alumnus of the 2001 dual degree batch, Vardhman Jain graduated with a B.Tech (Hons) and a MS in
+                        CSE from IIITH. He is now a Senior Engineering Manager at Google, in the Bay Area.
                     </p>
-                    <p>As an early board member of the IIIT-H Alumni Foundation, he continues to bring successive batches of graduates into the alumni fold in the Bay Area and Seattle. Vardhman was part of the first batch to join Google Hyderabad where he helped set up the match funding program and then carried it over to the US where his alumni involvement increased. He spearheaded the fundraising drive within Google, channeling the donations through the matching program of Benevity and the alumni at Google remain as one of the top donors till today. As one of the first board of directors of the IIITH Alumni Foundation USA Vardhman played a key role in drafting set-up documents, reviewing feedback, organizing fundraising events and guiding alumni on the various means to donate funds to accrue benefits and generating receipts after donations. He is now mentoring his juniors to take over the organizing and going forward.</p>
-                    <p class="note">The institute is proud to confer on alumnus Vardhman Jain the Outstanding Service Award–2023</p>
+                    <p>As an early board member of the IIIT-H Alumni Foundation, he continues to bring successive
+                        batches of graduates into the alumni fold in the Bay Area and Seattle. Vardhman was part of the
+                        first batch to join Google Hyderabad where he helped set up the match funding program and then
+                        carried it over to the US where his alumni involvement increased. He spearheaded the fundraising
+                        drive within Google, channeling the donations through the matching program of Benevity and the
+                        alumni at Google remain as one of the top donors till today. As one of the first board of
+                        directors of the IIITH Alumni Foundation USA Vardhman played a key role in drafting set-up
+                        documents, reviewing feedback, organizing fundraising events and guiding alumni on the various
+                        means to donate funds to accrue benefits and generating receipts after donations. He is now
+                        mentoring his juniors to take over the organizing and going forward.</p>
+                    <p class="note">The institute is proud to confer on alumnus Vardhman Jain the Outstanding Service
+                        Award-2023</p>
                 </div>
 
                 <!-- Winner 6: Maliha Mariyam -->
                 <div class="winner clearfix">
                     <img src="images/maliha_mariyam.jpg" alt="Maliha Mariyam" />
                     <p><strong>Maliha Mariyam</strong> <br>
-                        Alumna of the 2001 batch, Maliha Mariyam graduated with a B.Tech in CSE from IIIT Hyderabad and went on to obtain a diploma in law from NALSAR. She is now a Managing Partner in her own software firm APPSY since 2016.
+                        Alumna of the 2001 batch, Maliha Mariyam graduated with a B.Tech in CSE from IIIT Hyderabad and
+                        went on to obtain a diploma in law from NALSAR. She is now a Managing Partner in her own
+                        software firm APPSY since 2016.
                     </p>
-                    <p>As a student, Maliha happily volunteered to be in every committee of her batch – the lab, the girls’ hostel mess, the library committee and was also her class representative. She was called to work on the first draft of the PG Admissions portal as part of her RA ship. As an organizer of Felicity she helped raised significant amount of funding for the event. As an alumna she continues to be on the institute’s speed dial and fully participates in all the events of the institute, be it workshops, R&D showcase,, start-up showcase, invited talks etc. She easily cuts across all batches of alumni, maintaining close connects with them and is a brand ambassador for IIIT-H representing the women alumni. She is now part of the Byelaws committee for the IIITH Alumni Association.</p>
-                    <p class="note">The institute is proud to bestow on alumna Maliha Mariyam the Outstanding Service Award-2023</p>
+                    <p>As a student, Maliha happily volunteered to be in every committee of her batch - the lab, the
+                        girls' hostel mess, the library committee and was also her class representative. She was called
+                        to work on the first draft of the PG Admissions portal as part of her RA ship. As an organizer
+                        of Felicity she helped raised significant amount of funding for the event. As an alumna she
+                        continues to be on the institute's speed dial and fully participates in all the events of the
+                        institute, be it workshops, R&D showcase,, start-up showcase, invited talks etc. She easily cuts
+                        across all batches of alumni, maintaining close connects with them and is a brand ambassador for
+                        IIIT-H representing the women alumni. She is now part of the Byelaws committee for the IIITH
+                        Alumni Association.</p>
+                    <p class="note">The institute is proud to bestow on alumna Maliha Mariyam the Outstanding Service
+                        Award-2023</p>
                 </div>
 
                 <!-- Winner 7: Manohar Paluri -->
                 <div class="winner clearfix">
                     <img src="images/manohar_paluri.jpg" alt="Manohar Paluri" />
                     <p><strong>Manohar Paluri</strong> <br>
-                        Alumnus of the 2002 batch, Manohar Paluri graduated with a B.Tech in CSE from IIITH.After a stint in the industry he went on to pursue research at Georgia Tech. He is currently the Vice President at Meta (AI).
+                        Alumnus of the 2002 batch, Manohar Paluri graduated with a B.Tech in CSE from IIITH.After a
+                        stint in the industry he went on to pursue research at Georgia Tech. He is currently the Vice
+                        President at Meta (AI).
                     </p>
-                    <p>The poster boy of Computer Vision at IIIT Hyderabad, Manohar has maintained strong ties with the institute, ensuring he showcases the cutting edge research of the institute everywhere. IIIT Hyderabad is one of the 12 universities globally, working in egocentric vision’s Ego 4D program, the future in augmented reality. He regularly visits the campus for workshops during summer school, or to give talks about the latest and greatest in CV and AI. Over the past decade, Manohar has placed several students from IIIT-H, guided alumni on university and course selection, connected students to professors in different universities, and helped with internships at Meta and other organizations. Last year, the Paluri Foundation, a philanthropic organization set up by Manohar Paluri and his wife Ashwini, pledged 1 crore rupees over the next 5 years to help fund the academic block. With his zeal for innovation and sharing-knowledge Manohar has played a big role in connecting successive batches of alumni and Institute incubated start-ups to the US entrepreneurial system and core technology.</p>
-                    <p class="note">The institute is proud to bestow on alumnus Manohar Paluri the Outstanding Service Award-2023.</p>
+                    <p>The poster boy of Computer Vision at IIIT Hyderabad, Manohar has maintained strong ties with the
+                        institute, ensuring he showcases the cutting edge research of the institute everywhere. IIIT
+                        Hyderabad is one of the 12 universities globally, working in egocentric vision's Ego 4D program,
+                        the future in augmented reality. He regularly visits the campus for workshops during summer
+                        school, or to give talks about the latest and greatest in CV and AI. Over the past decade,
+                        Manohar has placed several students from IIIT-H, guided alumni on university and course
+                        selection, connected students to professors in different universities, and helped with
+                        internships at Meta and other organizations. Last year, the Paluri Foundation, a philanthropic
+                        organization set up by Manohar Paluri and his wife Ashwini, pledged 1 crore rupees over the next
+                        5 years to help fund the academic block. With his zeal for innovation and sharing-knowledge
+                        Manohar has played a big role in connecting successive batches of alumni and Institute incubated
+                        start-ups to the US entrepreneurial system and core technology.</p>
+                    <p class="note">The institute is proud to bestow on alumnus Manohar Paluri the Outstanding Service
+                        Award-2023.</p>
                 </div>
 
                 <!-- Winner 8: Sugandh Rakha -->
                 <div class="winner clearfix">
                     <img src="images/sugandh_rakha.jpg" alt="Sugandh Rakha" />
                     <p><strong>Sugandh Rakha</strong> <br>
-                        Alumnus of the 2003 batch, Sugandh Rakha graduated with a B.Tech (Hons) in CSE from IIITH. He is currently the Principal Product Manager at Service Now, Bay Area leading the their Integration Hub.
+                        Alumnus of the 2003 batch, Sugandh Rakha graduated with a B.Tech (Hons) in CSE from IIITH. He is
+                        currently the Principal Product Manager at Service Now, Bay Area leading the their Integration
+                        Hub.
                     </p>
-                    <p>Sugandh Rakha, is a pillar of IIIT Hyderabad’s vibrant Alumni Association Network and entrepreneurial ecosystem. He joined the IIIT-H seed fund that was later reorganized as the SucSEED Indovation VC Fund, as a limited partner, donating around 1% of his salary. He enjoys funding-mentoring for CIE incubated startups in the AI domain, helping them to grow in the US and Canada market. At IIIT-H, he wore his many hats with aplomb; as election commissioner for the first student body elections, building the election portal, PG admissions, the Institute’s internal portals and refurbishment of the website as IT admin. For IIIT Hyderabad’s 20th anniversary celebration, Sugandh was part of the Alumni team that set up the alumni database and organized events in multiple cities – Hyderabad, Bangalore, Seattle and the Bay Area. As an alumnus, he has been the go-to guy, as mentor, judge or jury or speaker at multiple events.</p>
-                    <p class="note">The institute is proud to bestow on alumnus Sugandh Rakha the Outstanding Service Award-2023.</p>
+                    <p>Sugandh Rakha, is a pillar of IIIT Hyderabad's vibrant Alumni Association Network and
+                        entrepreneurial ecosystem. He joined the IIIT-H seed fund that was later reorganized as the
+                        SucSEED Indovation VC Fund, as a limited partner, donating around 1% of his salary. He enjoys
+                        funding-mentoring for CIE incubated startups in the AI domain, helping them to grow in the US
+                        and Canada market. At IIIT-H, he wore his many hats with aplomb; as election commissioner for
+                        the first student body elections, building the election portal, PG admissions, the Institute's
+                        internal portals and refurbishment of the website as IT admin. For IIIT Hyderabad's 20th
+                        anniversary celebration, Sugandh was part of the Alumni team that set up the alumni database and
+                        organized events in multiple cities - Hyderabad, Bangalore, Seattle and the Bay Area. As an
+                        alumnus, he has been the go-to guy, as mentor, judge or jury or speaker at multiple events.</p>
+                    <p class="note">The institute is proud to bestow on alumnus Sugandh Rakha the Outstanding Service
+                        Award-2023.</p>
                 </div>
             </div>
 
@@ -181,26 +203,9 @@
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="footer" id="footer">
-        <div class="copyright">
-            © Copyright <strong><span>2024</span></strong>.
-        </div>
-        <div class="credits">
-            International Institute of Information Technology, Hyderabad. All rights reserved.
-        </div>
-    </footer>
+    <!-- Footer will be loaded here -->
+    <div id="footer-placeholder"></div>
 
-    <!-- JavaScript for Mobile Menu Toggle -->
-    <script>
-        const toggleButton = document.querySelector('.menu-toggle');
-        const navMenu = document.querySelector('.nav-menu');
-
-        toggleButton.addEventListener('click', () => {
-            toggleButton.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-    </script>
 </body>
 
 </html>

@@ -1,0 +1,52 @@
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top" data-scrollto-offset="0">
+    <div class="container header-container">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="logo" />
+        </a>
+
+        <h3 class="sc-title">Alumni&nbsp;Awards</h3>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="nav-menu" id="navMenu" style="width: 100%;">
+            <ul>
+                <li><a href="https://www.iiit.ac.in" target="_blank">IIITH</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#criteria">Criteria</a></li>
+                <li><a href="index.html#procedure">Rules&nbsp;/&nbsp;Procedure</a></li>
+                <!-- <a class="disabled-link" aria-disabled="true" tabindex="-1">Nomination&nbsp;Form</a></li> -->
+                <li class="dropdown">
+                    <button class="dropbtn">Winners &#x25BC;</button>
+                    <div class="dropdown-content">
+                        <a href="alumni-winners-2025.html">Winners&nbsp;2025</a>
+                        <a href="alumni-winners-2024.html">Winners&nbsp;2024</a>
+                        <a href="alumni-winners-2023.html">Winners&nbsp;2023</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <button class="dropbtn">Gallery &#x25BC;</button>
+                    <div class="dropdown-content">
+                        <a href="gallery.html">Pictures</a>
+                        <a href="award-ceremony.html">Award&nbsp;Ceremony</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- ===== End Header ===== -->
+
+<script>
+    // Toggle navigation menu for mobile view
+    const toggleButton = document.getElementById("menuToggle");
+    const navMenu = document.getElementById("navMenu");
+
+    toggleButton.addEventListener("click", () => {
+        toggleButton.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    });
+</script>
