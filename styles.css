@@ -164,15 +164,15 @@ p, li {
   font-size: 26px;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .about .c-content {
-    font-size: 20px;
+    font-size: 20px!important;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .about .c-content {
-    font-size: 16px;
+    font-size: 18px!important;
   }
 }
 
